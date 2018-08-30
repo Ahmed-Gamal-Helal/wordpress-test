@@ -1,0 +1,426 @@
+@import 'style/*'
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #0d1117;
+  }
+
+  #preloader img {
+    margin-top: 20%;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+.main-haeder
+    padding 10px 0px
+    @media screen and (max-width: 991px)
+        display none
+   .logo-img
+       text-align center 
+       > img 
+            width 183px
+            height 123px
+    .list
+        margin-top 40px
+        >li 
+            padding: 0 12px
+            position relative 
+            @media screen and (max-width: 1440px)
+                padding 0
+            &::before
+                content ""
+                position absolute
+                width 30%
+                height 2px
+                background-color maincolor
+                visibility hidden
+                bottom 0
+                left 32%
+                transition  100ms 
+            &:hover:before,&:focus:before, &.active:before
+                visibility visible
+                -webkit-transform scaleX(1)
+                transform scaleX(1)
+            > a
+              font-family itcbd  
+        .left-links
+            padding 5px 15px
+            > a 
+               color maincolor
+               &:hover
+                  text-decoration none 
+            .cart
+                margin-left 30px
+                > i 
+                    transform: rotateY(180deg);
+                    padding 5px
+.main-carousle-details   
+    position relative   
+    .item 
+        img 
+            padding: 0              
+    .owl-carousel
+        .item
+            height 600px
+            position relative
+            background-color: black;
+            > img
+                width 100%
+                height 100%
+                opacity .7
+            > .camera-type
+                position absolute
+                right 22%
+                top 20%
+                left 49%
+                text-align right
+                padding 4em 2em 3em
+                background-color rgba(0,0,0,.5)
+                @media screen and (max-width: 1440px)
+                    right 15%
+                    left 40%
+                @media screen and (max-width: 991px)
+                    left 30%
+                    h2 
+                        font-size 24px
+                h2 
+                    color secondcolor
+                    font-family Coco-Lt
+                    font-size 36px
+                    @media screen and (max-width: 991px)
+                        font-size 28px
+                p 
+                    color white
+                    font-size 16px
+                    font-family Coco-Lt
+                    line-height 2
+                    margin 25px 0
+                    min-height 96px
+                    -webkit-line-clamp 3
+                    -webkit-box-orient vertical
+                    overflow hidden
+                    text-overflow ellipsis
+                    display -webkit-box
+                    @media screen and (max-width: 991px)
+                        font-size 13px
+                a
+                    color white
+                    font 16px Coco-Bd
+        .owl-nav
+            position absolute
+            left 0
+            right 0
+            bottom 50%
+            .owl-prev
+                position relative
+                background-color transparent
+                float right 
+                &:hover
+                        background-color transparent
+                &:before
+                    position absolute
+                    content "\f105"
+                    font-family Flaticon
+                    font-weight 600
+                    top 0
+                    bottom 0
+                    right 2em
+                    font-size 21px
+                    color white
+                    background-color maincolor
+                    height 47px
+                    padding 10px
+                    border-radius 4px
+            .owl-next
+                position relative
+                background-color transparent
+                float left 
+                &:hover
+                    background-color transparent
+                &:before
+                    position absolute
+                    content "\f106"
+                    font-family Flaticon
+                    font-weight 600
+                    top 0
+                    bottom 0
+                    left 2em
+                    font-size 21px
+                    color white
+                    background-color maincolor
+                    height 47px
+                    padding 10px
+                    border-radius 4px
+        .owl-dots
+            position absolute
+            right 0
+            left 0
+            bottom 2.5em
+            .owl-dot
+                span
+                    height 5px
+                    width 5px
+            .owl-dot.active
+                span
+                    width 30px
+                    height 5px
+                    background white
+.welcome-board
+    background-color #f4f4f4
+    padding 20px 0
+    .first-welcome
+        border-left-width 1px
+        border-left-color secondcolor
+        border-left-style solid
+        margin 2em 0
+        padding 1em 0
+        span 
+            font 16px Coco-Lt
+            
+        h3
+            font 28px Coco-Lt
+            font-weight bold
+            margin-top .5em
+            color secondcolor
+    .second-welcome
+        margin 1.5em 0
+        padding 1.5em 0
+        p
+            font 16px Coco-Lt
+            -webkit-line-clamp 3
+            -webkit-box-orient vertical
+            overflow hidden
+            text-overflow ellipsis
+            display -webkit-box
+            line-height 2
+            display inline-block
+            margin-bottom 0
+            a
+                font 16px Coco-Bd
+                margin-right 1em
+.new-added
+    .owl-carousel
+        .owl-nav
+            position absolute
+            top -97px
+            left 0
+            .owl-prev, .owl-next
+                background #000000 !important
+    .item
+        position relative
+        min-height 350px
+        a, p
+            font-family Coco-Lt
+        a.product-name
+            color #000000
+            font-size 18px
+            font-weight bold
+        p
+            font-size 15px
+            margin-top 9px !important
+        .name-price
+            position absolute
+            right 8px
+            left 8px
+            bottom 0px
+            background-color white
+            padding 16px 18px
+            border 1px solid #DDD
+            border-radius 4px
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .2), 0px 0px 10px 1px rgba(0, 0, 0, .2);
+            p
+                margin 0
+.our-news
+    background-color #f4f4f4
+    padding 1em 0
+    margin-top 4.5em
+    .hands-up
+        h2
+            margin 1em 0 1.25em
+    .elemnt-repeated
+        p
+            font 18px Coco-Lt
+            color black
+        a
+            color #db9f68
+            font 15px Coco-Lt
+.contact-now
+    background-image url('../images/007.png')
+    background-size cover
+    background-position center
+    width 100%
+    position relative
+    &:before
+        content ''
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        background-color #3b6ead
+        opacity .9
+    .hands-up
+        opacity 1
+        z-index 11
+        position relative
+        h2 
+            color white
+            margin 0
+            padding 1.6em
+    input, textarea
+        font-family Coco-Lt
+        padding-right 1em
+        width 100%
+        border-radius 4px
+        background-color transparent
+        border 1px solid #FFF
+        color white
+        &::placeholder
+            color white
+    input 
+        height 3.5em
+    textarea
+        padding-top .5em
+    button.send-now
+        width 150px
+        height 3em
+        border-radius 4px
+        border none
+        font 18px Coco-Lt
+        margin 2em 0 3em
+        cursor pointer
+.our-clients
+    .owl-carousel
+        .item
+            background-color #f2f2f2
+            text-align center
+            img 
+                width auto
+                padding 12px 0
+                margin auto
+                height 87px
+.single-news
+    margin-top 0
+    padding-top 4.5em
+    background-color transparent
+.products
+    img 
+        display block
+        width 100%
+        padding 1em 0
+        height 315px
+.commom-news
+    .img-right
+        img 
+            width 100%
+    .words-left
+        p
+            font 16px Coco-Lt
+            line-height 2
+        ul
+            margin-bottom 2em
+            @media (max-width 991px)
+                margin-top 1em
+            li
+                display inline-block
+                a
+                    i 
+                        color white
+                        height 40px
+                        width 40px
+                        font-size 13px
+                        padding 4px 6px
+                        border-radius 4px
+                    i.flaticon-whatsapp-logo
+                        background-color #25d366
+                    i.flaticon-linkedin-logo
+                        background-color #0077b5
+                    i.flaticon-google-plus
+                        background-color #dc4e41
+                    i.flaticon-envelope
+                        background-color #7d7d7d
+                    i.flaticon-twitter
+                        background-color #55acee
+                    i.flaticon-facebook-logo
+                        background-color #3b5998
+                    i.flaticon-share-symbol
+                        background-color #95d03a
+                span
+                    font 15px Coco-Lt
+                    margin-right 1em
+.connect-us
+    background-image none
+    margin-top 5em
+    &:before
+        content none
+.circles
+    ul.location-map, ul.call
+        margin-right 3em
+        li
+            span
+                font 16px Coco-Bd
+        &:before
+            font-family Flaticon
+            right .5em
+            position absolute
+            border 1px dashed #2561aad6
+            border-radius 50%
+            height 40px
+            width 40px
+            text-align center
+            line-height 40px
+            color #001023
+            margin-top 6px
+    ul.location-map
+        margin-bottom 3em
+        &:before
+            content "\f107"
+    ul.call
+        margin-bottom 2em
+        &:before
+            content "\f100"
+.header-circles
+    text-align left
+    margin-top 40px
+    @media (max-width 991px)
+        text-align center
+    @media (max-width 776px)
+        text-align right
+    ul.location-map, ul.call
+        margin-bottom 0
+        display inline-block
+        position relative
+        padding-right 4em
+        @media (max-width 776px)
+            margin-right 0
+        li
+            color white
+        &:before
+            color secondcolor
+
+    form
+        input, textarea 
+            border 1px solid #DDD
+            color black
+            &::placeholder
+                color black
+        button.send-now
+            background-color secondcolor
+            color white
+    

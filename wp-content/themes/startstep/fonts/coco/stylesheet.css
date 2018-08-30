@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Coco-Bd';
+    src: url('CoconNextArabic-Bold.eot');
+    src: url('CoconNextArabic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CoconNextArabic-Bold.woff2') format('woff2'),
+        url('CoconNextArabic-Bold.woff') format('woff'),
+        url('CoconNextArabic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cocon Next Arabic';
+    src: url('CoconNextArabic-Bold_1.eot');
+    src: url('CoconNextArabic-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('CoconNextArabic-Bold_1.woff2') format('woff2'),
+        url('CoconNextArabic-Bold_1.woff') format('woff'),
+        url('CoconNextArabic-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Coco-Lt';
+    src: url('CoconNextArabic-Light.eot');
+    src: url('CoconNextArabic-Light.eot?#iefix') format('embedded-opentype'),
+        url('CoconNextArabic-Light.woff2') format('woff2'),
+        url('CoconNextArabic-Light.woff') format('woff'),
+        url('CoconNextArabic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cocon Next Arabic';
+    src: url('CoconNextArabic-Light_1.eot');
+    src: url('CoconNextArabic-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('CoconNextArabic-Light_1.woff2') format('woff2'),
+        url('CoconNextArabic-Light_1.woff') format('woff'),
+        url('CoconNextArabic-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
